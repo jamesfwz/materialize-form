@@ -1,6 +1,6 @@
 # Materialize::Form
 
-This is a generator gem for [SimpleForm](https://github.com/plataformatec/simple_form){:target="_blank"} to make it works with [MaterializeCSS](http://materializecss.com/){:target="_blank"}.
+This is a generator gem for [SimpleForm](https://github.com/plataformatec/simple_form) to make it works with [MaterializeCSS](http://materializecss.com/).
 
 ## Installation
 
@@ -106,7 +106,7 @@ Date picker will be generated automatically if the type of the field is date.
   = f.input :featured, as: :radio_buttons, wrapper_html: { class: 'm6 s12' }
 ```
 
-## Working with [Nested Form](https://github.com/ryanb/nested_form){:target="_blank"}
+## Working with [Nested Form](https://github.com/ryanb/nested_form)
 
 In `app/assets/javascripts/application.js`:
 
