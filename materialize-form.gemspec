@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "materialize-form"
   spec.version       = Materialize::Form::VERSION
   spec.authors       = ["James La"]
-  spec.email         = ["fwzjames@gmail.com"]
+  spec.email         = ["jamesla0604@gmail.com"]
 
   spec.summary       = "Materialize + SimpleForm."
   spec.description   = "This gem includes a generator for SimpleForm configuration with Materialize. It also includes custom inputs for materialize."
