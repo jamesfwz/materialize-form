@@ -1,0 +1,6 @@
+Description:
+    Generates initialiser file for SimpleForm to configure with Materialize-Sass gem.
+    Also generates a module to be included to SimpleForm::Inputs::Base so that Materialize Character Count feature works
+
+Example:
+    rails generate simple_form:materialize:install
