@@ -2,6 +2,8 @@
 
 This is a generator gem for [SimpleForm](https://github.com/plataformatec/simple_form) to make it works with [MaterializeCSS](http://materializecss.com/).
 
+There is an example application available on Heroku that demonstrate various features of Materialize::Form. You can view them here: http://materialize-form.herokuapp.com/. [Source Code](https://github.com/jamesfwz/materialize-form-example)
+
 ## Installation
 
 Add this line to your application's Gemfile:
