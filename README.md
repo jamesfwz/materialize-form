@@ -7,21 +7,26 @@ There is an example application available on Heroku that demonstrate various fea
 Haven't install [SimpleForm](https://github.com/plataformatec/simple_form) and [MaterializeCSS](http://materializecss.com/)? Please follow this instruction:
 
 Add this line to your application's Gemfile:
-``` ruby
+
+```
 gem 'simple_form'
 gem 'materialize-sass'
 ```
-```console
+
+```
 $ bundle install
 rails generate simple_form:install
 ```
+
 Import Materialize styles in app/assets/stylesheets/application.scss:
-```scss
+
+```
 @import "materialize";
 ```
+
 **NOTE:** If you have just generated a new Rails application, it  may come with a `.css` file instead. If this file exists, it will be served instead of Sass, so remove it.
 
-```console
+```
 $ rm app/assets/stylesheets/application.css
 ```
 
@@ -29,25 +34,22 @@ $ rm app/assets/stylesheets/application.css
 
 ### Step 1:
 Add this line to your application's Gemfile:
-```ruby
+```
 gem 'materialize-form'
 ```
 
 ### Step 2:
 Run the bundler and restart your server to make the files available through the pipeline and run the generator
-```console
+```
 $ bundle install
 $ rails generate simple_form:materialize:install
 ```
 
 ### Step 3:
 Import Materialize Form javascript in `app/assets/javascripts/application.js`:
-```js
-//= require materialize-form
 
-$(document).ready(function() {
-  window.materializeForm.init()
-});
+```
+//= require materialize-form
 ```
 
 ## Usage
@@ -115,7 +117,7 @@ Date picker will be generated automatically if the type of the field is date.
 
 In `app/assets/javascripts/application.js`:
 
-```js
+```
 $(document).on('nested:fieldAdded', function(event){
   window.materializeForm.init()
 })

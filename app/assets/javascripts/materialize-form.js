@@ -18,3 +18,11 @@ window.materializeForm = {
     });
   }
 }
+
+$(document).ready(function() {
+  window.materializeForm.init()
+});
+
+$(document).ajaxSuccess(function() {
+  window.materializeForm.init()
+});
