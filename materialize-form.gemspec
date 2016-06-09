@@ -13,8 +13,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Materialize - SimpleForm Generator."
   spec.description   = "This gem includes a generator for SimpleForm configuration with Materialize. It also includes custom inputs for materialize."
   spec.homepage      = "http://materialize-form.herokuapp.com/users/new"
-
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = Dir["MIT-LICENSE", "README.md", "lib/**/*", "app/**/*", "bin/**/*", "config/**/*"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
