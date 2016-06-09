@@ -4,7 +4,7 @@ This is a generator gem for [SimpleForm](https://github.com/plataformatec/simple
 
 There is an example application available on Heroku that demonstrate various features of Materialize::Form. You can view here: http://materialize-form.herokuapp.com/. To see the [Source Code](https://github.com/jamesfwz/materialize-form-example)
 
-Haven't install [SimpleForm](https://github.com/plataformatec/simple_form) and [MaterializeCSS](http://materializecss.com/)? Please follow this instruction:
+Haven't install [SimpleForm](https://github.com/plataformatec/simple_form) and [Materialize SASS](https://github.com/mkhairi/materialize-sass)? Please follow this instruction:
 
 Add this line to your application's Gemfile:
 
@@ -15,7 +15,14 @@ gem 'materialize-sass'
 
 ```
 $ bundle install
-rails generate simple_form:install
+$ rails generate simple_form:install
+```
+
+Require Materialize javascripts in app/assets/javascripts/application.js:
+
+```
+//= require jquery
+//= require materialize-sprockets
 ```
 
 Import Materialize styles in app/assets/stylesheets/application.scss:
