@@ -37,7 +37,7 @@ Import Materialize styles in app/assets/stylesheets/application.scss:
 $ rm app/assets/stylesheets/application.css
 ```
 
-## Installation 
+## Installation
 
 ### Step 1:
 Add this line to your application's Gemfile:
@@ -65,7 +65,7 @@ Import Materialize Form javascript in `app/assets/javascripts/application.js`:
 To start using Materialize Form you just have to use the helper it provides:
 
 ```slim
-= simple_form_for @user do |f|  
+= simple_form_for @user do |f|
   .row
     = f.input :first_name, wrapper_html: { class: 'm6 s12' }
     = f.input :last_name, wrapper_html: { class: 'm6 s12' }
@@ -130,9 +130,19 @@ $(document).on('nested:fieldAdded', function(event){
 })
 ```
 
+## Working with [Turbolinks](https://github.com/turbolinks/turbolinks)
+
+In `app/assets/javascripts/application.js`:
+
+```
+$(document).on('turbolinks:load', function() {
+  window.materializeForm.init()
+})
+```
+
 # Example:
 ```slim
-= simple_nested_form_for @category do |category_form|  
+= simple_nested_form_for @category do |category_form|
   .row
     = category_form.input :title, wrapper_html: { class: 'm6 s12' }
     = category_form.input :picture, wrapper_html: { class: 'm6 s12' }

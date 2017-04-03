@@ -2,7 +2,7 @@ window.materializeForm = {
   init: function() {
     this.initSelect()
     this.initCheckbox()
-    this.initDate()  
+    this.initDate()
   },
   initSelect: function() {
     $('select[multiple="multiple"] option[value=""]').attr('disabled', true)
@@ -13,7 +13,7 @@ window.materializeForm = {
   },
   initDate: function() {
     $('input.date').pickadate({
-      selectMonths: true, 
+      selectMonths: true,
       selectYears: 100
     });
   }
