@@ -6,7 +6,12 @@ window.materializeForm = {
   },
   initSelect: function() {
     $('select[multiple="multiple"] option[value=""]').attr('disabled', true)
-    $('select').material_select()
+    if (typeof $('select').material_select === "function") {
+      $('select').material_select()
+    } else {
+      $('select').formSelect()
+    }
+
   },
   initCheckbox: function() {
     $('input[type=checkbox]').addClass('filled-in')
