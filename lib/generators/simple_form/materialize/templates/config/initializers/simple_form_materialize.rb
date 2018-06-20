@@ -36,10 +36,17 @@ SimpleForm.setup do |config|
     b.use :html5
     b.optional :readonly
 
+    # Uncomment if using materialize-css version < 1
+    # b.use :input
+    # b.use :label
+    #
+
+    # Uncomment if using materialize-css version >= 1
     b.wrapper tag: 'label' do |ba|
       ba.use :input
       ba.use :tag, tag: 'span', text: :label_text
     end
+    #
 
     b.use :error, wrap_with: { tag: 'small', class: 'error-block red-text text-darken-1' }
     b.use :hint,  wrap_with: { tag: 'span', class: 'help-block' }

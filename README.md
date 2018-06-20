@@ -53,6 +53,10 @@ $ rails generate simple_form:materialize:install
 ```
 
 ### Step 3:
+Find your newly generated initializer at `config/initializers/simple_form_materialize.rb`. Depending on the version of `materialize-css` that you are using you may need to comment/uncomment certain sections.
+
+
+### Step 4:
 Import Materialize Form javascript in `app/assets/javascripts/application.js`:
 
 ```
