@@ -11,8 +11,9 @@ module Materialize
           register_rails_engine
         elsif sprockets?
           register_sprockets
+        elsif sass?
+          register_sass
         end
-        configure_sass
       end
 
       # Paths
@@ -49,12 +50,11 @@ module Materialize
         defined?(::Rails)
       end
 
-      private
-
-      def configure_sass
-        require 'sass'
-        ::Sass.load_paths << stylesheets_path
+      def sass?
+        defined?(::Sass) && ::Sass.respond_to?(:load_paths)
       end
+
+      private
 
       def register_rails_engine
         require 'materialize/form/engine'
@@ -66,6 +66,9 @@ module Materialize
         Sprockets.append_path(javascripts_path)
       end
 
+      def register_sass
+        ::Sass.load_paths << stylesheets_path
+      end
     end
   end
 end
